@@ -1,0 +1,15 @@
+
+.scrollable{
+    display:block;
+    height: 290px;
+    overflow-y: scroll;
+
+    /* overflow-y: scroll; */
+}
+/* tr{
+    display:block;
+    width:100;
+}
+.table tbody tr td{
+    display: block;
+} */

@@ -1,0 +1,68 @@
+
+.nav-item{
+    margin:2px; 
+    background-color: rgb(28, 224, 195);
+    border-radius: 5px;
+    height:80px;
+}
+.nav-link {
+    color:#fff;
+}
+input{
+    height:30px;
+}
+.small{
+    width:380px;
+}
+
+p{
+    color:white;
+    text-align: center;
+}
+.res-tables{
+    margin:1px;
+    padding-top: 8px;
+}
+.btnTable{
+    background-color: rgb(226, 224, 224);
+    padding:8px;
+    margin:8px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+/* Virtual Scrolling */
+/* .container{
+    height:120px;
+} */
+.container{
+    overflow-y:scroll;
+    overflow-x: hidden;
+    height:122px;
+    margin-top: 8px;
+
+}
+.scroll-it{
+    overflow-y:scroll;
+    overflow-x: hidden;
+    height:128px;
+   
+}
+.btn{
+    background-color: rgb(193, 188, 188);
+    color:black;
+    width:90px;
+    height:40px;
+    margin:2px;
+    border:none;
+    background-color: rgb(202, 217, 247);
+
+}
+.btn:hover{
+    border:none;
+}

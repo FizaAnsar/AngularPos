@@ -1,0 +1,121 @@
+<header class="navbar">
+    <div class="container-fluid justify-content-space-between services">
+
+
+        <button type="button" class="btn btn1 btn-large">
+            <div class="fa-icon">
+                <fa-icon [icon]="person"></fa-icon>
+            </div>
+            <div>
+                Takeaway
+            </div>
+            <div class="numbers">
+                ({{count}})
+            </div>
+        </button>
+        <button type="button" class="btn btn1 btn-large">
+            <div class="fa-icon">
+                <fa-icon [icon]="clock"></fa-icon>
+            </div>
+            <div>
+                Delivery
+            </div>
+            <div class="numbers">
+                ({{count}})
+            </div>
+        </button>
+        <button type="button" class="btn btn1 btn-large">
+            <div class="fa-icon">
+                <fa-icon [icon]="utensils"></fa-icon>
+            </div>
+            <div>
+                Dine-in
+            </div>
+            <div class="numbers">
+               ({{count}})
+            </div>
+        </button>
+
+    </div>
+</header>
+
+<!-- Menus -->
+
+<section>
+
+    <div class="mainDiv bg-light" *ngIf="menus && menus.length > 0">
+
+        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[0].menuName}}</button>
+        <button class="btn btns btn-lg active" (click)="increment('val')">{{menus[1].menuName}}</button>
+        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[2].menuName}}</button>
+        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[3].menuName}}</button>
+        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[4].menuName}}</button>
+        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[5].menuName}}</button>
+        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[6].menuName}}</button>
+        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[7].menuName}}</button>
+        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[8].menuName}}</button>
+
+    </div>
+    <!-- FOR SMALL SCREEN -->
+    <div class="resDiv bg-light p-2">
+        <a class="btn menures" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+            aria-controls="Menu" (click)="menuCollapsed = !menuCollapsed" [attr.aria-expanded]="!menuCollapsed">
+            <div>Menu</div>
+            <div>
+                <fa-icon [icon]="bars"></fa-icon>
+            </div>
+        </a>
+        <div class="collapse" id="Menu" [ngbCollapse]="menuCollapsed">
+            <div class="card card-body">
+                <div class="resServices bg-light" *ngIf="menus && menus.length > 0">
+                    <button type="button" class="btn btn1 btn-large">
+                        <div class="fa-icon">
+                            <fa-icon [icon]="person"></fa-icon>
+                        </div>
+                        <div>
+                            Takeaway
+                        </div>
+                        <div class="numbers">
+                            (0)
+                        </div>
+                    </button>
+                    <button type="button" class="btn btn1 btn-large">
+                        <div class="fa-icon">
+                            <fa-icon [icon]="clock"></fa-icon>
+                        </div>
+                        <div>
+                            Delivery
+                        </div>
+                        <div class="numbers">
+                            (0)
+                        </div>
+                    </button>
+                    <button type="button" class="btn btn1 btn-large">
+                        <div class="fa-icon">
+                            <fa-icon [icon]="utensils"></fa-icon>
+                        </div>
+                        <div>
+                            Dine-in
+                        </div>
+                        <div class="numbers">
+                            (0)
+                        </div>
+                    </button>
+                </div>
+                <div class=" mobdiv bg-light" *ngIf="menus && menus.length > 0">
+
+                    <button class="btn btns btn-lg">{{menus[0].menuName}}</button>
+                    <button class="btn btns btn-lg active">{{menus[1].menuName}}</button>
+                    <button class="btn btns btn-lg">{{menus[2].menuName}}</button>
+                    <button class="btn btns btn-lg">{{menus[3].menuName}}</button>
+                    <button class="btn btns btn-lg">{{menus[4].menuName}}</button>
+                    <button class="btn btns btn-lg">{{menus[5].menuName}}</button>
+                    <button class="btn btns btn-lg">{{menus[6].menuName}}</button>
+                    <button class="btn btns btn-lg">{{menus[7].menuName}}</button>
+                    <button class="btn btns btn-lg">{{menus[8].menuName}}</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
