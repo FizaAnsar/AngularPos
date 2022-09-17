@@ -11,7 +11,9 @@ import { MenuItemsComponent } from './MyComponents/menu-items/menu-items.compone
 import { ItemDetailsComponent } from './MyComponents/item-details/item-details.component';
 import { OrderDetailsComponent } from './MyComponents/order-details/order-details.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     NgbModule,
     FontAwesomeModule,
     ScrollingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
 
   ],
   providers: [],

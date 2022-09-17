@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {faPerson, faClock, faUtensils,faBars} from '@fortawesome/free-solid-svg-icons';
 import menuItem from '../../JSON/menu.json'
+import {BbqCategoryService} from '../../Services/bbq-category.service'
+
 interface Menu{
   id:number,
   menuName:string
@@ -16,14 +18,40 @@ export class MenuComponent implements OnInit {
   clock = faClock;
   utensils= faUtensils;
   bars=faBars;
-  constructor() { }
+  url:any;
+
+  constructor(private bbqdata:BbqCategoryService) {
+   
+      this.bbqdata.bbq().subscribe((data)=>{
+        console.warn("data",data);
+        this.url=data;
+      });
+      console.log("hello")
+    
+   
+  }
+
   menus: Menu[]=menuItem;
+
   // Increment Function
   count=0;
   increment(val:any){
     this.count++;
     this.count==val;
   }
+
+    menu:any;
+  clicked(category:string){
+    
+    console.warn(category);
+    this.menu= category;
+    
+  }
+
+
+
+
+ 
 
   ngOnInit(): void {
   }

@@ -1,17 +1,10 @@
-<div class="bg-light mainDiv" *ngIf="menuItems && menuItems.length > 0">
+<div class="bg-light mainDiv" >
+    <div class="loop" *ngFor="let bbq of url">
 
-    <button class="btn btns btn-lg">{{menuItems[0].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[1].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[2].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[3].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[4].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[5].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[6].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[7].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[8].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[9].menuName}}</button>
-    <button class="btn btns btn-lg">{{menuItems[10].menuName}}</button>
+        <button class="btn btns btn-lg" id="btn">{{bbq.name}}</button>
+    </div>
 </div>
+
 <!-- SMALL SCREEN -->
 <div class="resDiv bg-light p-2">
     <a class="btn menures" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
@@ -25,19 +18,12 @@
     <div class="collapse" id="MenuItems" [ngbCollapse]="isCollapsed">
         <div class="card card-body">
 
-            <div class="mobdiv bg-light" *ngIf="menuItems && menuItems.length > 0">
+            <div class="mobdiv bg-light">
 
-                <button class="btn btns btn-lg">{{menuItems[0].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[1].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[2].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[3].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[4].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[5].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[6].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[7].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[8].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[9].menuName}}</button>
-                <button class="btn btns btn-lg">{{menuItems[10].menuName}}</button>
+                <div class="loop" *ngFor="let bbq of url">
+
+                    <button class="btn btns btn-lg" >{{bbq.name}}</button>
+                </div>
             </div>
         </div>
     </div>

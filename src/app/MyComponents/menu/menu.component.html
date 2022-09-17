@@ -43,18 +43,23 @@
 
 <section>
 
-    <div class="mainDiv bg-light" *ngIf="menus && menus.length > 0">
+    <div class="mainDiv bg-light" >
+        <div *ngFor="let category of menus">
 
-        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[0].menuName}}</button>
-        <button class="btn btns btn-lg active" (click)="increment('val')">{{menus[1].menuName}}</button>
-        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[2].menuName}}</button>
-        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[3].menuName}}</button>
-        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[4].menuName}}</button>
-        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[5].menuName}}</button>
-        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[6].menuName}}</button>
-        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[7].menuName}}</button>
-        <button class="btn btns btn-lg" (click)="increment('val')">{{menus[8].menuName}}</button>
+            <button class="btn btns btn-lg" id="clickbtn" 
+            [attr.aria-label]="category.menuName" (click)="clicked(categories.value)" 
+            value="{{category.menuName}}"
+            #categories
+            >
+            
+            {{category.menuName}}
 
+           
+        
+        </button>
+   
+        </div>
+     
     </div>
     <!-- FOR SMALL SCREEN -->
     <div class="resDiv bg-light p-2">
@@ -102,20 +107,16 @@
                         </div>
                     </button>
                 </div>
-                <div class=" mobdiv bg-light" *ngIf="menus && menus.length > 0">
+                <div class=" mobdiv bg-light">
+                    <div *ngFor="let category of menus">
 
-                    <button class="btn btns btn-lg">{{menus[0].menuName}}</button>
-                    <button class="btn btns btn-lg active">{{menus[1].menuName}}</button>
-                    <button class="btn btns btn-lg">{{menus[2].menuName}}</button>
-                    <button class="btn btns btn-lg">{{menus[3].menuName}}</button>
-                    <button class="btn btns btn-lg">{{menus[4].menuName}}</button>
-                    <button class="btn btns btn-lg">{{menus[5].menuName}}</button>
-                    <button class="btn btns btn-lg">{{menus[6].menuName}}</button>
-                    <button class="btn btns btn-lg">{{menus[7].menuName}}</button>
-                    <button class="btn btns btn-lg">{{menus[8].menuName}}</button>
+                        <button class="btn btns btn-lg">{{category.menuName}}</button>
+                    </div>
 
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+{{menu}}
