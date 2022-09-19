@@ -1,3 +1,4 @@
+
 /*  */
 /* header */
 .services{
@@ -44,6 +45,7 @@
     background-color: rgb(202, 217, 247);
     border-radius:4px;
     transition: all ease .25s;
+    font-size: 18px;
 }
 .btns:hover{
     background-color: #198754;
@@ -96,3 +98,22 @@
     }
    
   }
+
+
+
+    /* MENU LISTS */
+    .listsContainer{
+        display: grid;
+        height:250px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    @media only screen and (max-width: 992px) {
+      
+        .listsContainer{
+            display:none;
+        }
+       
+      }
+ 

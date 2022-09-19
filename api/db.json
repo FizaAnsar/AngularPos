@@ -19,6 +19,21 @@
       "id": 4,
       "name":"BEEF",
       "postId": 4
+    },
+    {
+      "id": 5,
+      "name":"CHICKEN WINGS",
+      "postId": 4
+    },
+    {
+      "id": 6,
+      "name":"BURGER GARNISH",
+      "postId": 4
+    },
+    {
+      "id": 7,
+      "name":"CHEES SLICE",
+      "postId": 4
     }
   ],
   "BEVERAGES": [
@@ -96,14 +111,29 @@
     },
     {
       "id": 4,
-      "name": "POPCORN SHRIMPS",
+      "name": "SHRIMPS",
+      "postId": 4
+    },
+    {
+      "id": 5,
+      "name":"NUGETS",
+      "postId": 4
+    },
+    {
+      "id": 6,
+      "name":"CRABS",
+      "postId": 4
+    },
+    {
+      "id": 7,
+      "name":"SQUID",
       "postId": 4
     }
   ],
   "KARAHI": [
     {
       "id": 1,
-      "name": "CHICKEN REGULAR KARAHI",
+      "name": "CHICKEN REGULAR ",
       "postId": 1
     },
     {
@@ -113,12 +143,22 @@
     },
     {
       "id": 3,
-      "name": "CHICKEN ACHARI KARAHI",
+      "name": "CHICKEN ACHARI ",
       "postId": 3
     },
     {
       "id": 4,
-      "name":"CHICKEN CHATPATI KARAHI",
+      "name":"CHICKEN CHATPATI",
+      "postId": 4
+    },
+    {
+      "id": 4,
+      "name":"MUTTON KARAHI",
+      "postId": 4
+    },
+    {
+      "id": 4,
+      "name":"MALAI BOTI",
       "postId": 4
     }
   ],
@@ -149,7 +189,7 @@
       "postId": 4
     } 
   ],
-  "SALAD RAITA": [
+  "SALADRAITA": [
     {
         "id":1,
         "name":"RUSSIAN SALAD",
@@ -218,6 +258,16 @@
         "id":5,
         "name":"MUTTON MULTANI HANDI",
         "postId": 5
+    },
+    {
+      "id": 6,
+      "name":"BIRYANI",
+      "postId": 4
+    },
+    {
+      "id": 4,
+      "name":"PULAO",
+      "postId": 4
     }
 ],
 "TRADITIONAL": [
