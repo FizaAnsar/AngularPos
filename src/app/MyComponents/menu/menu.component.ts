@@ -1,7 +1,8 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {faPerson, faClock, faUtensils,faBars} from '@fortawesome/free-solid-svg-icons';
+import { PosService } from 'src/app/Services/pos.service';
 import menuItem from '../../JSON/menu.json'
-import {BbqCategoryService} from '../../Services/bbq-category.service'
+
 
 interface Menu{
   id:number,
@@ -21,83 +22,64 @@ export class MenuComponent implements OnInit {
   bars=faBars;
   url:any;
 
-  constructor(private bbqdata:BbqCategoryService) {
+  constructor(private menuData:PosService) {
    
   }
 
   menu:any;
   clicked(category:string){
     
-  //   console.warn(category);
-  //   if(category=="BBQ"){
-  //     this.bbqdata.bbq().subscribe((data)=>{
-  //       console.warn("data",data);
-  //       this.url=data;
-  //     });
-  //   }
-  //   else if(category=="BEVERAGES"){
-  //     this.bbqdata.beverage().subscribe((data)=>{
-  //       console.warn("data",data);
-  //       this.url=data;
-  //     });
-  //   }
-  // else if(category=="FISH"){
-  //       this.bbqdata.fish().subscribe((data)=>{
-  //         console.warn("data",data);
-  //         this.url=data;
-  //       });
-  //   }
     switch (category) {
       case "TRADITIONAL":
-        this.bbqdata.traditional().subscribe((data)=>{
+        this.menuData.traditional().subscribe((data)=>{
           console.warn("data",data);
           this.url=data;
         });
           break;
       case "BEVERAGES":
-        this.bbqdata.beverage().subscribe((data)=>{
+        this.menuData.beverage().subscribe((data)=>{
           console.warn("data",data);
           this.url=data;
         });
           break;
       case "FISH":
-        this.bbqdata.fish().subscribe((data)=>{
+        this.menuData.fish().subscribe((data)=>{
           console.warn("data",data);
           this.url=data;
         });
           break;
       case "KARAHI":
-        this.bbqdata.karahi().subscribe((data)=>{
+        this.menuData.karahi().subscribe((data)=>{
           console.warn("data",data);
           this.url=data;
         });
           break;
       case "NASHTA":
-        this.bbqdata.nashta().subscribe((data)=>{
+        this.menuData.nashta().subscribe((data)=>{
           console.warn("data",data);
           this.url=data;
         });
           break;
       case "SALAD RAITA":
-        this.bbqdata.raita().subscribe((data)=>{
+        this.menuData.raita().subscribe((data)=>{
           console.warn("data",data);
           this.url=data;
         });
           break;
       case "SWEETS":
-        this.bbqdata.sweet().subscribe((data)=>{
+        this.menuData.sweet().subscribe((data)=>{
           console.warn("data",data);
           this.url=data;
         });
           break;
       case "TANDOOR":
-        this.bbqdata.tandoor().subscribe((data)=>{
+        this.menuData.tandoor().subscribe((data)=>{
           console.warn("data",data);
           this.url=data;
         });
           break;
       default:
-        this.bbqdata.bbq().subscribe((data)=>{
+        this.menuData.bbq().subscribe((data)=>{
           console.warn("data",data);
           this.url=data;
         });
@@ -107,7 +89,7 @@ export class MenuComponent implements OnInit {
 
   }
  
-
+ 
   menus: Menu[]=menuItem;
 
   // Increment Function
@@ -116,7 +98,6 @@ export class MenuComponent implements OnInit {
     this.count++;
     this.count==val;
   }
-
 
 
 

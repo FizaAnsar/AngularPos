@@ -1,4 +1,67 @@
-<header class="navbar">
+
+<!-- Menu Lists -->
+<div class="bg-light">
+    <app-search></app-search>
+</div>
+<div class="bg-light listsContainer" >
+     
+    <div class="loop" *ngFor="let bbq of url">
+        <button class="btn btns btn-lg" id="btn" (click)="increment('val')">{{bbq.name}}</button>
+    </div>
+</div>
+
+<!-- SMALL SCREEN -->
+<div class="resDiv bg-light p-2">
+    <a class="btn menures" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="MenuItems" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed">
+        <div>Menu Items</div>
+        <div>
+            <fa-icon [icon]="bars"></fa-icon>
+        </div>
+    </a>
+    <div class="collapse" id="MenuItems" [ngbCollapse]="isCollapsed">
+        <div class="card card-body">
+
+            <div class="mobdiv bg-light">
+
+                <div class="loop" *ngFor="let bbq of url">
+                    <button class="btn btns btn-lg" id="btn" (click)="increment('val')">{{bbq.name}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Menus/ CATEGORIES -->
+
+<section>
+
+    <div class="product">
+        <div class="container-fluid">
+            <div class="slider-wrap">
+                <div class="slider-main">
+                    <button class="item"  *ngFor="let category of menus"
+                    [attr.aria-label]="category.menuName" (click)="clicked(categories.value)" 
+                        value="{{category.menuName}}"
+                        #categories
+                    >
+                        
+                         
+                        {{category.menuName}}
+                    
+                </button>
+                </div>
+                <div class="button-area">
+                    <button type="button" class="prev" appPrev><i class="fa-solid fa-angle-left"></i></button>
+                    <button type="button" class="next" appNext><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="navbar">
     <div class="container-fluid justify-content-space-between services">
 
 
@@ -37,121 +100,8 @@
         </button>
 
     </div>
-</header>
-
-<!-- Menus/ CATEGORIES -->
-
-<section>
-
-    <div class="mainDiv bg-light" >
-        <div *ngFor="let category of menus">
-
-            <button class="btn btns btn-lg" id="clickbtn" 
-            [attr.aria-label]="category.menuName" (click)="clicked(categories.value)" 
-            value="{{category.menuName}}"
-            #categories
-            >         
-            {{category.menuName}}
-        </button>
-   
-        </div>
-     
-    </div>
-    <!-- FOR SMALL SCREEN -->
-    <div class="resDiv bg-light p-2">
-        <a class="btn menures" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-            aria-controls="Menu" (click)="menuCollapsed = !menuCollapsed" [attr.aria-expanded]="!menuCollapsed">
-            <div>Menu</div>
-            <div>
-                <fa-icon [icon]="bars"></fa-icon>
-            </div>
-        </a>
-        <div class="collapse" id="Menu" [ngbCollapse]="menuCollapsed">
-            <div class="card card-body">
-                <div class="resServices bg-light" *ngIf="menus && menus.length > 0">
-                    <button type="button" class="btn btn1 btn-large">
-                        <div class="fa-icon">
-                            <fa-icon [icon]="person"></fa-icon>
-                        </div>
-                        <div>
-                            Takeaway
-                        </div>
-                        <div class="numbers">
-                            ({{count}})
-                        </div>
-                    </button>
-                    <button type="button" class="btn btn1 btn-large">
-                        <div class="fa-icon">
-                            <fa-icon [icon]="clock"></fa-icon>
-                        </div>
-                        <div>
-                            Delivery
-                        </div>
-                        <div class="numbers">
-                            ({{count}})
-                        </div>
-                    </button>
-                    <button type="button" class="btn btn1 btn-large">
-                        <div class="fa-icon">
-                            <fa-icon [icon]="utensils"></fa-icon>
-                        </div>
-                        <div>
-                            Dine-in
-                        </div>
-                        <div class="numbers">
-                            ({{count}})
-                        </div>
-                    </button>
-                </div>
-                <div class=" mobdiv bg-light">
-                    <div *ngFor="let category of menus">
-
-                        <button class="btn btns btn-lg" id="clickbtn" 
-                        [attr.aria-label]="category.menuName" (click)="clicked(categories.value)" 
-                        value="{{category.menuName}}"
-                        #categories
-                        >         
-                        {{category.menuName}}
-                    </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
-<!-- {{menu}} -->
 
 
-<!-- Menu Lists -->
-<div class="bg-light listsContainer mt-5" >
-    <div class="loop" *ngFor="let bbq of url">
 
-        <button class="btn btns btn-lg" id="btn" (click)="increment('val')">{{bbq.name}}</button>
-    </div>
-</div>
-
-<!-- SMALL SCREEN -->
-<div class="resDiv bg-light p-2">
-    <a class="btn menures" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-        aria-controls="MenuItems" (click)="isCollapsed = !isCollapsed"
-        [attr.aria-expanded]="!isCollapsed">
-        <div>Menu Items</div>
-        <div>
-            <fa-icon [icon]="bars"></fa-icon>
-        </div>
-    </a>
-    <div class="collapse" id="MenuItems" [ngbCollapse]="isCollapsed">
-        <div class="card card-body">
-
-            <div class="mobdiv bg-light">
-
-                <div class="loop" *ngFor="let bbq of url">
-
-                    <button class="btn btns btn-lg" id="btn" (click)="increment('val')">{{bbq.name}}</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>

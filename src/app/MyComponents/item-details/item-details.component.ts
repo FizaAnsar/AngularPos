@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {faDatabase, faReceipt, faUtensils, faPrint, faPause,faFileLines} from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-item-details',
   templateUrl: './item-details.component.html',
@@ -12,7 +13,10 @@ export class ItemDetailsComponent implements OnInit {
   print = faPrint;
   pause= faPause;
   reports= faFileLines;
-  constructor() { }
+  url:any;
+  constructor() { 
+   
+  }
 
   ngOnInit(): void {
   }

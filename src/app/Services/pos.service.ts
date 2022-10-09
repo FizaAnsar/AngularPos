@@ -1,11 +1,10 @@
-import { EventEmitter, Injectable, Output } from '@angular/core';
+import { Injectable } from '@angular/core';
 import{HttpClient} from '@angular/common/http';
-import {Input} from '@angular/core'
+
 @Injectable({
   providedIn: 'root'
 })
-export class BbqCategoryService {
-
+export class PosService {
   bbqs= "http://localhost:3000/BBQ";
   beverages = "http://localhost:3000/BEVERAGES"
   fishes = " http://localhost:3000/FISH"
@@ -15,12 +14,12 @@ export class BbqCategoryService {
   sweets ="  http://localhost:3000/SWEETS"
   tandoors ="  http://localhost:3000/TANDOOR"
   traditionals ="http://localhost:3000/TRADITIONAL"
- 
- 
+  
   constructor(private http:HttpClient) { }
   
   bbq(){
-    return this.http.get(this.bbqs);
+    return this.http.get(this.bbqs)
+    // .subscribe((c: Config) => this.Config.next(c));
   }
   beverage(){
     return this.http.get(this.beverages);

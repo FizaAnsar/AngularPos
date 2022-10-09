@@ -3,22 +3,26 @@
     {
       "id": 1,
       "name": "CHICKEN TIKKA",
-      "postId": 1
+      "postId": 1,
+      "price":100
     },
     {
       "id": 2,
       "name":"SAUSAGES",
-      "postId": 2
+      "postId": 2,
+      "price":100
     },
     {
       "id": 3,
        "name":"SHRIMPS",
-      "postId": 3
+      "postId": 3,
+      "price":100
     },
     {
       "id": 4,
       "name":"BEEF",
-      "postId": 4
+      "postId": 4,
+      "price":100
     },
     {
       "id": 5,
@@ -28,283 +32,337 @@
     {
       "id": 6,
       "name":"BURGER GARNISH",
-      "postId": 4
+      "postId": 4,
+      "price":100
     },
     {
       "id": 7,
       "name":"CHEES SLICE",
-      "postId": 4
+      "postId": 4,
+      "price":100
     }
   ],
   "BEVERAGES": [
     {
       "id": 1,
       "name": "1.5 LTR DRINKS",
-      "postId": 1
+      "postId": 1,
+      "price":100
     },
     {
       "id": 2,
       "name": "2.25 LTR DRINKS",
-      "postId": 2
+      "postId": 2,
+      "price":100
     },
     {
       "id": 3,
       "name": "CAN COKE SPRITE",
-      "postId": 3
+      "postId": 3,
+      "price":100
     },
     {
       "id": 4,
       "name": "FRESH LIME",
-      "postId": 4
+      "postId": 4,
+      "price":100
     },
     {
       "id": 5,
       "name": "GREEN TEA",
-      "postId": 5
+      "postId": 5,
+      "price":100
     },
     {
       "id": 6,
       "name": "GURH WALI CHAI",
-      "postId": 6
+      "postId": 6,
+      "price":100
     },
     {
       "id": 7,
       "name": "LASSI FULL",
-      "postId": 7
+      "postId": 7,
+      "price":100
     },
     {
       "id": 8,
       "name": "LASSI HALF",
-      "postId": 8
+      "postId": 8,
+      "price":50
     },
     {
       "id": 9,
       "name": "METHI LASSI",
-      "postId": 9
+      "postId": 9,
+      "price":200
+
     },
     {
       "id": 10,
       "name": "MINERAL WATER L",
-      "postId": 10
+      "postId": 10,
+      "price":150
     },
     {
       "id": 11,
       "name": "MINERAL WATER S",
-      "postId": 11
+      "postId": 11,
+      "price":100
     }
   ],
   "FISH": [
     {
       "id": 1,
       "name":"SUSHI",
-      "postId": 1
+      "postId": 1,
+      "price":800
     },
     {
       "id": 2,
       "name": "SALMON",
-      "postId": 2
+      "postId": 2,
+      "price":700
     },
     {
       "id": 3,
       "name": "FISH FILLETS",
-      "postId": 3
+      "postId": 3,
+      "price":600
     },
     {
       "id": 4,
       "name": "SHRIMPS",
-      "postId": 4
+      "postId": 4,
+      "price":100
     },
     {
       "id": 5,
       "name":"NUGETS",
-      "postId": 4
+      "postId": 4,
+      "price":500
     },
     {
       "id": 6,
       "name":"CRABS",
-      "postId": 4
+      "postId": 4,
+      "price":400
     },
     {
       "id": 7,
       "name":"SQUID",
-      "postId": 4
+      "postId": 4,
+      "price":300
     }
   ],
   "KARAHI": [
     {
       "id": 1,
       "name": "CHICKEN REGULAR ",
-      "postId": 1
+      "postId": 1,
+      "price":200
     },
     {
       "id": 2,
       "name": "WHITE KARAHI",
-      "postId": 2
+      "postId": 2,
+      "price":100
     },
     {
       "id": 3,
       "name": "CHICKEN ACHARI ",
-      "postId": 3
+      "postId": 3,
+      "price":900
     },
     {
       "id": 4,
       "name":"CHICKEN CHATPATI",
-      "postId": 4
+      "postId": 4,
+      "price":800
     },
     {
       "id": 4,
       "name":"MUTTON KARAHI",
-      "postId": 4
+      "postId": 4,
+      "price":700
     },
     {
       "id": 4,
       "name":"MALAI BOTI",
-      "postId": 4
+      "postId": 4,
+      "price":600
     }
   ],
   "NASHTA": [
     {
       "id": 1,
       "name":"HOMEMADE PARATHAY",
-      "postId": 1
+      "postId": 1,
+      "price":500
     },
     {
       "id": 2,
       "name": "HALEEM",
-      "postId": 2
+      "postId": 2,
+      "price":400
     },
     {
       "id": 3,
       "name": "OMLETTE",
-      "postId": 3
+      "postId": 3,
+      "price":300
     },
     {
       "id": 4,
       "name": "SOOJI KA HALWA",
-      "postId": 4
+      "postId": 4,
+      "price":200
     },
     {
       "id": 4,
       "name": "CHANNY",
-      "postId": 4
+      "postId": 4,
+      "price":100
     } 
   ],
   "SALADRAITA": [
     {
         "id":1,
         "name":"RUSSIAN SALAD",
-        "postId": 1
+        "postId": 1,
+        "price":300
     },
     {
         "id":2,
         "name":"CHICKEN CEASER SALAD",
-        "postId": 2
+        "postId": 2,
+        "price":200
     },
     {
         "id":3,
         "name": "RAITA",
-        "postId": 3
+        "postId": 3,
+        "price":100
     }
 ],
 "SWEETS": [
     {
         "id":1,
         "name": "RAS MALAI",
-        "postId": 1
+        "postId": 1,
+        "price":500
     },
     {
         "id": 2,
         "name": "KHEER",
-        "postId": 2
+        "postId": 2,
+        "price":400
     },
     {
         "id": 3,
         "name": "SOOJI KA HALWA",
-        "postId": 3
+        "postId": 3,
+        "price":300
     },
     {
         "id":4,
         "name": "GAJJAR KA HALWA",
-        "postId": 4
+        "postId": 4,
+        "price":200
     },
     {
         "id":5,
         "name":"SHAHI TUKRAY",
-        "postId": 5
+        "postId": 5,
+        "price":100
     }
 ],
 "TANDOOR": [
     {
         "id":1,
         "name": "MUTTON MUGHLAI MASALA",
-        "postId": 1
+        "postId": 1,
+        "price":700
     },
     {
         "id":2,
         "name": "MUTTON JUMBO",
-        "postId": 2
+        "postId": 2,
+        "price":600
     },
     {
         "id":3,
         "name":"MUTTON GINGER",
-        "postId": 3
+        "postId": 3,
+        "price":500
     },
     {
         "id":4,
         "name": "MUTTON HANDI",
-        "postId": 4
+        "postId": 4,
+        "price":400
     },
     {
         "id":5,
         "name":"MUTTON MULTANI HANDI",
-        "postId": 5
+        "postId": 5,
+        "price":300
     },
     {
       "id": 6,
       "name":"BIRYANI",
-      "postId": 4
+      "postId": 4,
+      "price":200
     },
     {
       "id": 4,
       "name":"PULAO",
-      "postId": 4
+      "postId": 4,
+      "price":100
     }
 ],
 "TRADITIONAL": [
     {
         "id": 1,
         "name": "SHAMI KEBAB",
-        "postId": 1
+        "postId": 1,
+        "price":800
     },
     {
         "id": 2,
         "name": "SEEKH KEBAB",
-        "postId": 2
+        "postId": 2,
+        "price":700
     },
     {
         "id": 3,
         "name": "CHAPLI KEBAB",
-        "postId": 3
+        "postId": 3,
+        "price":600
     },
     {
         "id":4,
         "name": "POTATO CUTLETS",
-        "postId": 4
+        "postId": 4,
+        "price":500
     },
     {
         "id":5,
         "name": "PANJEERI",
-        "postId": 5
+        "postId": 5,
+        "price":400
     },
     {
         "id":6,
         "name": "SARSON KA SAAG",
-        "postId": 6
+        "postId": 6,
+        "price":300
     },
     {
         "id":7,
         "name": "ALOO BAINGAN",
-        "postId": 7
+        "postId": 7,
+        "price":200
     }
 ]
   

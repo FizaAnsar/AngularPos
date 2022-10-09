@@ -104,7 +104,7 @@
     /* MENU LISTS */
     .listsContainer{
         display: grid;
-        height:250px;
+        height:320px;
         grid-template-columns: 1fr 1fr 1fr ;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -116,4 +116,87 @@
         }
        
       }
+
+
+
+/* categories Slider */
+
+.product {
+    padding: 10px 0;
+}
+
+.slider-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+}
+
+.slider-main {
+    position: absolute;
+    width: 200%;
+}
+
+.item {
+    display: inline-block;
+    width: 220px;
+    background-color: rgb(227, 223, 223);
+    /* height: 100px; */
+    padding:40px 0;
+    position: relative;
+    margin: 0 12px;
+    text-align: center;
+    border:none;
+    color:#198754;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+.item:hover {
+    background-color: transparent;
+    border: 1px solid #198754;
+    color: #198754;
+    box-shadow: -1px 4px 11px -4px rgba(114, 109, 109, 0.75);
+    -webkit-box-shadow: -1px 4px 11px -4px rgba(114, 109, 109, 0.75);
+    -moz-box-shadow: -1px 4px 11px -4px rgba(114, 109, 109, 0.75);
+
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #198754;
+    font-weight: bolder;
+}
+
+.text:hover {
+    color: #198754;
+}
+
+.prev {
+    position: absolute;
+    left: 33px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: transparent;
+
+}
+
+.next {
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: transparent;
+}
+
+.fa-solid {
+    color: #198754;
+    font-size: 28px;
+}
  

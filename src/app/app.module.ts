@@ -11,13 +11,20 @@ import { ItemDetailsComponent } from './MyComponents/item-details/item-details.c
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { NextDirective } from './Directives/next.directive';
+import { PrevDirective } from './Directives/prev.directive';
+import { SearchComponent } from './MyComponents/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MenuComponent,
-    ItemDetailsComponent
+    ItemDetailsComponent,
+    NextDirective,
+    PrevDirective,
+    SearchComponent
    
   ],
   imports: [
@@ -27,7 +34,8 @@ import {HttpClientModule} from '@angular/common/http';
     FontAwesomeModule,
     ScrollingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],
